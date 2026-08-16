@@ -1,8 +1,10 @@
-name: Hello World
+name: GitHub Action repo
 on: push
-jobs:
-  build:
-    runs-on: ubuntu-latest
+jobs:    
+  action-demo:
+    runs-on: ubuntu-22.04
     steps:
-      - name: Build step
-        run: echo "hello, ${{ secrets.DOCKER_PASS }}"
+      - name: Checkout the codee
+        uses: actions/checkout@v4
+      - name: Print index.html
+        run: cat index.html
