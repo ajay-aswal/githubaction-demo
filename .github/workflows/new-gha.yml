@@ -17,5 +17,3 @@ jobs:
       - name: Deploy phase
         run: echo "deploying the App"
 
-			
-	
