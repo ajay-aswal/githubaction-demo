@@ -5,4 +5,7 @@ jobs:
       runs-on:  ubuntu-22.04
       steps:
         - name: Hello Step
-          run: echo "Welcome to GitHUb Actions"
+          run: |
+              echo "This is line one"
+              echo "This is line two"
+          
